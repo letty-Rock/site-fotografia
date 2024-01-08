@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML</title>
+</head>
+<body>
+<h1 >Aprendendo HTML</h1>
+    <div>
+        <ul>
+           <li> <a href="#paragrafos">Cabeçalhos e Parágrafos</a></li>
+            <li><a href="#lista">Listas</a></li>
+            <li><a href="#enfase">Enfase</a></li>
+            <li><a href="#elementos">Itálico, negrito e sublinhado</a></li>
+            <li><a href="#hiperlink">hiperlink</a></li>
+            <li><a href="#listadedescricao">Lista de Descrição</a></li>
+        </ul>
+    </div>
+
+    
+    <h2 id="paragrafos"> Cabeçalhos e Parágrafos</h1>
+    <p>Parágrafo, se escreve com p</p>
+    <h1> Exemplo </h1>
+
+    <h1>O furo esmagador</h1>
+
+<p>Por Chris Mills</p>
+
+<h2>Capítulo 1: A noite escura</h2>
+
+<p>
+  Era uma noite escura. Em algum lugar, uma coruja piou. A chuva caiu no chão
+  ...
+</p>
+
+<h2>Capítulo 2: O eterno silêncio</h2>
+
+<p>
+  Nosso protagonista não podia ver mais que um relance da figura sombria ...
+</p>
+
+<h3>O espectro fala</h3>
+
+<p>
+  Várias horas se passaram, quando, de repente, o espectro ficou em pé e
+  exclamou: "Por favor, tenha piedade da minha alma!"
+</p>
+
+<span style="font-size: 32px; margin: 21px 0;"> Este é um título editado com css diretamente no HTML?</span>
+
+<h2 id="lista">Lista não Ordenada</h2>
+<ul>
+    leite
+    ovos
+    pão
+    homus
+  </ul>
+
+  <ul>
+    <li>leite</li>
+    <li>ovos</li>
+    <li>pão</li>
+    <li>homus</li>
+  </ul>
+  
+  <h2>Lista Ordenada</h2>
+  
+  <ol>
+    <li>Dirija até o final da estrada</li>
+    <li>Vire à direita</li>
+    <li>Vá em frente nas duas primeiras rotatórias</li>
+    <li>Vire à esquerda na terceira rotatória</li>
+    <li>A escola fica à sua direita, a 300 metros da estrada</li>
+  </ol>
+  
+  <h2>Aninhando Lista</h2>
+  <ol>
+    <li>Retire a pele do alho e pique</li>
+    <li>Retire todas as sementes e caule da pimenta e pique</li>
+    <li>Adicione todos os ingredientes em um processador de alimentos</li>
+    <li>
+      Processar todos os ingredientes em uma pasta
+      <ul>
+        <li>
+          Se você quiser um hummus grosso "pesado", processe-o por um curto
+          período de tempo
+        </li>
+        <li>Se você deseja um hummus suave, processe-o por mais tempo</li>
+      </ul>
+    </li>
+  </ol>
+  
+<h2 id="enfase">Enfase</h2>
+<p>Eu estou <em>feliz</em> você não está <em>atrasado</em>.</p>
+
+<h2 id="importancia">Importância</h2>
+
+<p>Este líquido é <strong>altamente tóxico</strong>.</p>
+
+<p>Estou contando com você. <strong>Não</strong> se atrase!</p>
+
+<h2 id="elementos">Itálico, negrito e sublinhado</h2>
+
+<!-- nomes científicos -->
+<p>
+    O Colibri Ruby-throated (<i>Archilochus colubris</i>) é o colibri mais comum
+    do Leste da América do Norte.
+  </p>
+  
+  <!-- palavras estrangeiras -->
+  <p>
+    O menu era um mar de palavras exóticas como <i lang="uk-latn">vatrushka</i>,
+    <i lang="id">nasi goreng</i> e <i lang="fr">soupe à l'oignon</i>.
+  </p>
+  
+  <!-- um erro de ortografia conhecido -->
+  <p>
+    Algum dia eu vou aprender como
+    <u style="text-decoration-line: underline; text-decoration-style: wavy;"
+      >jogar</u
+    >
+    melhor.
+  </p>
+  
+  <!-- Destaque as palavras-chave em um conjunto de instruções -->
+  <ol>
+    <li><b>Fatie</b> dois pedaços de pão do pão.</li>
+    <li>
+      <b>Colocar</b> uma fatia de tomate e uma folha de alface entre as fatias de
+      pão.
+    </li>
+  </ol>
+  
+
+  <p id="hiperlink">
+    Estou criando um link para
+    <a
+      href="https://www.mozilla.org/pt-BR/"
+      title="O melhor lugar para encontrar mais informações sobre a missão da Mozilla e como contribuir">
+      a página inicial da Mozilla</a
+    >.
+  </p>
+  <p>
+    <a href="http://www.example.com/large-report.pdf">
+      Baixe o relatório de vendas (PDF, 10MB)
+    </a>
+  </p>
+  
+  <p>
+    <a href="http://www.example.com/video-stream/">
+      Assista ao vídeo (o fluxo abre em separado, qualidade HD)
+    </a>
+  </p>
+  
+  <p>
+    <a href="http://www.example.com/car-game">
+      Jogue o jogo de carro (requer Flash Player)
+    </a>
+  </p>
+  <a
+  href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US"
+  download="firefox-39-installer.exe">
+  Faça o download do Firefox 39 para Windows
+</a>
+<h2 id="datetime">Hora e data</h2>
+
+<!-- Data simples padrão -->
+<time datetime="2016-01-20">20 January 2016</time>
+<!-- Apenas ano e mês -->
+<time datetime="2016-01">January 2016</time>
+<!-- Just month and day -->
+<time datetime="01-20">20 January</time>
+<!-- Apenas tempo, horas e minutos -->
+<time datetime="19:30">19:30</time>
+<!-- Você pode fazer segundos e milissegundos também! -->
+<time datetime="19:30:01.856">19:30:01.856</time>
+<!-- Data e hora -->
+<time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+<!-- Data e hora com compensação de fuso horário -->
+<time datetime="2016-01-20T19:30+01:00"
+  >7.30pm, 20 January 2016 is 8.30pm in France</time
+>
+<!-- Chamando um número de semana específico -->
+<time datetime="2016-W04">The fourth week of 2016</time>
+
+
+</body>
+</html>
